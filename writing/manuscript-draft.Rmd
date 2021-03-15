@@ -1,0 +1,15 @@
+---
+title: 'Comparing Frequencies Across Corpora: A Statistical Methods Study'
+author: "Adriana Picoral"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library(boot)
+library(knitr)
+library(tidyverse)
+opts_chunk$set(echo = FALSE)
+```
+
+# Introduction
+
