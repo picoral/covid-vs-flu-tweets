@@ -51,9 +51,10 @@ token_count <- token_count %>%
 # calculate range
 token_range <- tokenized_tweets %>%
   distinct(status_id, search_string, word) %>%
-  count(word) %>%
+  count(search_string, word) %>%
   rename(range = n)
 
 # add range to token count
 token_count <- token_count %>%
   left_join(token_range)
+
